@@ -5,11 +5,11 @@ const onDocumentReady = () => {
         document.querySelector('.mobile-navmenu').classList.toggle('hidden');
     });
 
-    if (window.location.pathname === "/services.html") {
+    if (window.location.pathname.includes("/services.html")) {
         onServicesDocumentReady()
     }
 
-    if (window.location.pathname === "/resume.html") {
+    if (window.location.pathname.includes("/resume.html")) {
         switchTheme()
     }
 }
