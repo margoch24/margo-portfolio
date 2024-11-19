@@ -1,0 +1,57 @@
+body {
+    --background-color: rgba(15, 15, 15, 0.975);
+    --title-color: white;
+    --text-color: gray;
+    --main-bg-color: rgba(15, 15, 15, 0.975);
+}
+
+body.light-mode {
+    --background-color: white;
+    --title-color: black;
+    --text-color: gray;
+    --main-bg-color: #e9ecef8a;
+}
+
+header {
+    background-color: var(--background-color) !important;
+}
+
+main {
+    background-color: var(--main-bg-color) !important;
+}
+
+.switch-button-content {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.switch-button-text {
+    font-size: 20px;
+    color: var(--title-color);
+    margin-left: 0;
+    font-family: 'Kodchasan';
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-section {
+    flex: 1;
+}
+
+.sitename {
+    color: var(--title-color) !important;
+}
+
+footer {
+    background-color: var(--main-bg-color) !important;
+}
+
+footer .support span {
+    color: var(--title-color) !important;
+}

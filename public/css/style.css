@@ -257,7 +257,7 @@ main {
   transition: width 1s ease-in-out;
 }
 
-.about .about-content, .services .services-content {
+.about .about-content, .services .services-content, .resume .resume-content {
   margin-top: 8rem;
   padding: 1rem 3rem;
   flex: 1;
@@ -549,6 +549,7 @@ main {
 #video.service-details video {
   max-width: 600px;
   align-self: center;
+  width: 100%;
 }
 
 #video.service-details iframe, #video.service-details audio {
@@ -556,7 +557,8 @@ main {
 }
 
 #video.service-details iframe {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 300px;
 }
 
@@ -715,5 +717,15 @@ main {
 @media (max-width: 330px) {
   .about-card {
     word-break: break-word;
+  }
+}
+
+@media (max-width: 305px) {
+  .about-card {
+    word-break: break-word;
+  }
+
+  .services-group {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
