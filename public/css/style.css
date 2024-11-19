@@ -1,0 +1,719 @@
+.underlined {
+  text-decoration: underline;
+}
+
+header {
+  background-color: rgba(15, 15, 15, 0.975);
+  z-index: 8;
+  position: fixed;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: rgba(15, 15, 15, 0.975);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(15, 15, 15, 0.975);
+  padding: 30px 0;
+}
+
+.gradient-line {
+  height: 10px;
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,121,105,1) 55%, rgba(0,151,255,1) 100%);
+}
+
+.link-sitename {
+  text-decoration: none;
+}
+
+.sitename {
+  font-family: "Kaushan Script";
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+header .navmenu .desk-navmenu div a, header .navmenu .mobile-navmenu div a {
+  text-decoration: none;
+  color: grey;
+  font-family: "Sour Gummy";
+  font-size: 20px;
+}
+
+header .navmenu .desk-navmenu div {
+  margin-right: 2rem;
+}
+
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header .navmenu .desk-navmenu {
+  display: flex;
+}
+
+header .navmenu .desk-navmenu div a.active, header .navmenu .mobile-navmenu div a.active,
+header .navmenu .desk-navmenu div a:hover, header .navmenu .mobile-navmenu div a:hover {
+  text-decoration: underline;
+  color: #32BA9A;
+}
+
+footer .section-one {
+  display: flex;
+  align-items: center;
+}
+
+footer .section-two {
+  width: 500px;
+  margin-left: 3rem;
+  border-left: 1px solid gray;
+  padding-left: 1rem;
+  color: gray;
+}
+
+footer .icons a {
+  margin-right: 1rem;
+  color: #32BA9A;
+}
+
+footer .icons a i {
+  font-size: 25px;
+}
+
+footer .icons {
+  margin-bottom: 1rem;
+}
+
+footer .support {
+  color: gray;
+  font-size: 15px;
+}
+
+footer .support span {
+  color: white;
+  font-style: italic;
+}
+
+main {
+  min-height: 100vh;
+  background-color: rgba(15, 15, 15, 0.975);
+  display: flex;
+}
+
+.my-image {
+  background-image: url('../img/me.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; 
+  display: block;
+  height: auto;
+  width: 40%;
+}
+
+.home-content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: right;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5rem 0 0;
+}
+
+.home-content .title {
+  font-size: 40px;
+  color: white;
+  font-family: "Kodchasan";
+  font-weight: 300;
+  line-height: 1.2em;
+  outline: none;
+  font-weight: 300;
+  color: #fff;
+}
+
+.home-content .subtitle {
+  margin-top: 6rem;
+  font-size: 18px;
+  color: white;
+  font-family: "Kodchasan";
+  font-weight: 300;
+  line-height: 1.2em;
+  outline: none;
+  font-weight: 300;
+  color: #fff;
+}
+
+.home-content .title p, .section-title {
+  font-style: italic;
+  font-family: "Kaushan Script";
+  text-shadow: 0 0 10px rgba(0, 151, 255, 1), 0 0 20px #32BA9A, 0 0 40px rgba(0, 151, 255, 1), 0 0 80px #32BA9A, 0 0 100px #32BA9A;
+  letter-spacing: 10px;
+  margin-left: 2rem;
+  font-size: 60px;
+  margin-top: 1rem;
+}
+
+.section-title-two {
+  font-size: 40px;
+  color: white;
+  margin-left: 0;
+  font-family: 'Kodchasan';
+  text-align: center;
+  margin-top: 13rem;
+}
+
+.section-title-three {
+  font-size: 35px;
+  color: white;
+  margin-left: 0;
+  font-family: 'Kodchasan';
+}
+
+.section-description.type-two {
+  text-align: center;
+  margin-top: 1rem !important;
+}
+
+.button {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 0 5px #32BA9A, 0 0 10px #32BA9A, 0 0 10px rgba(0, 151, 255, 1), 0 0 20px #32BA9A, 0 0 30px #32BA9A;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button h3 {
+  font-size: 18px;
+  font-family: "Kodchasan";
+  text-shadow: 0 0 10px #32BA9A, 0 0 20px #32BA9A, 0 0 40px rgba(0, 151, 255, 1), 0 0 80px #32BA9A, 0 0 100px #32BA9A;
+  color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: gainsboro;
+}
+
+.button:hover h3 {
+  color: rgba(15, 15, 15, 0.975);
+}
+
+.hidden {
+  display: none;
+}
+
+.navmenu-toggle {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.line-grow {
+  opacity: 0;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.line-grow.show-line {
+  opacity: 1;
+  transition: width 1s ease-in-out;
+}
+
+.about .about-content, .services .services-content {
+  margin-top: 8rem;
+  padding: 1rem 3rem;
+  flex: 1;
+}
+
+.section-description {
+  color: gray;
+  font-family: "Kodchasan";
+}
+
+.section-title {
+  font-size: 50px;
+  color: white;
+  margin-left: 0;
+}
+
+.about .section-description {
+  margin-top: 3rem;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 2rem 3rem;
+}
+
+.about-card {
+  padding: 10px 20px 10px 10px;
+  color: white;
+  font-family: 'Sour Gummy';
+  border-right: 1px solid #035464;
+  border-bottom: 1px solid #035464;
+  background: linear-gradient(45deg, rgba(3, 84, 100, 1) 0%, rgba(9, 121, 105, 1) 13%, rgba(21, 21, 21, 1) 45%);
+}
+
+.about-card h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.about-card h4 {
+  font-size: 15px;
+  margin: 10px 0 0 0;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.about-cards-content {
+  max-width: 1100px;
+  margin: 4rem auto;
+}
+
+.sitename-content {
+  display: flex;
+  align-items: center;
+}
+
+.sitename-image {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+}
+
+.line-slider {
+  position: relative;
+}
+
+.line-slider .helper-line {
+  background: #1a1a1a;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.line-slider .main-line {
+  position: absolute;
+  top: 0;
+  height: 10px;
+  background: rgba(9, 121, 105, 1);
+  border-radius: 5px;
+}
+
+.line-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem 3rem;
+}
+
+.line-slider-text {
+  display: flex;
+  color: white;
+}
+
+.line-slider-text h3, .circle-slider-text h3 {
+  font-size: 15px;
+}
+
+.line-slider-text h3.percentage {
+  text-align: right;
+}
+
+.circle-slider-text {
+  color: white;
+}
+
+.circle-slider .main-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circle-slider {
+  position: relative;
+  width: 200px;
+  margin-right: 2rem;
+}
+
+.circle-slider .helper-circle {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #151515;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.circle-slider-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.circle-skills {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 5rem auto;
+}
+
+.circle-slider:last-child, .education-item:last-child {
+  margin-right: 0;
+}
+
+.education-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 4rem auto;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.education-item p {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.language-item {
+  font-size: 25px;
+  font-family: 'Sour Gummy';
+  color: rgba(9, 121, 105, 1);
+}
+
+.language-item span {
+  font-size: 15px;
+  font-style: italic;
+  color: grey;
+}
+
+.languages-content {
+  max-width: 1100px;
+  margin: 4rem auto;
+}
+
+.image-content {
+  margin: 13rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  border-radius: 30px;
+  margin-right: 3rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.image-content div {
+  max-width: 800px;
+}
+
+.image-content div p {
+  text-align: justify;
+}
+
+.w-200 {
+  max-width: 200px;
+  width: 100%;
+}
+
+.w-300 {
+  max-width: 300px;
+  width: 100%;
+}
+
+.custom-text-center {
+  text-align: center;
+}
+
+.custom-text-right {
+  text-align: right;
+}
+
+.service-item h3 {
+  font-family: "Kaushan Script";
+  margin-top: 3rem;
+  color: white;
+}
+
+.service-item p {
+  font-size: 13px;
+}
+
+.service-item img {
+  width: 60px;
+}
+
+.services-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 3rem;
+}
+
+.services-section {
+  max-width: 1100px;
+  margin: 5rem auto;
+}
+
+.service-item {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #212025;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: translateY(-20px);
+  transition: transform 0.6s ease-out;
+  border: 1px solid #035464;
+}
+
+.service-details {
+  margin-bottom: 6rem;
+}
+
+.service-details h3 {
+  font-size: 18px;
+  color: white;
+  font-family: 'Kodchasan';
+}
+
+.service-details p span {
+  background: #424242;
+  color: #32BA9A;
+}
+
+#video.service-details.hidden {
+  display: none;
+}
+
+#video.service-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#video.service-details video {
+  max-width: 600px;
+  align-self: center;
+}
+
+#video.service-details iframe, #video.service-details audio {
+  align-self: center;
+}
+
+#video.service-details iframe {
+  width: 600px;
+  height: 300px;
+}
+
+.service-details i {
+  font-size: 40px;
+  color: #32BA9A;
+  background-color: rgba(15, 15, 15, 0.975);
+  border-radius: 50px;
+  padding: 5px 6px 6px;
+  cursor: pointer;
+}
+
+.arrow-div {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+#video.service-details audio {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (max-width: 1500px) {
+ .my-image {
+  width: 50%;
+ }
+}
+
+@media (max-width: 1080px) {
+  main.home {
+    flex-direction: column-reverse;
+    padding-top: 10rem;
+  }
+
+  .home-content {
+    text-align: center;
+    padding: 20px;
+
+  }
+
+  .button.contact {
+    margin: 2rem auto 2rem;
+  }
+
+  .my-image {
+    display: none;
+  }
+
+  .my-image-mobile {
+    display: block;
+  }
+
+  .image-content {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .image-content img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    display: block;
+    padding: 30px;
+  }
+
+  .icons {
+    margin-top: 3rem;
+  }
+
+  .home-content .title p {
+    margin-left: 0;
+  }
+
+  .my-image {
+    width: 100%;
+  }
+
+  .navmenu-toggle {
+    display: block;
+  }
+
+  header .mobile-navmenu {
+    position: absolute;
+    top: 57.5px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.975);
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  header .navmenu .desk-navmenu {
+    display: none;
+  }
+
+  header .header-content {
+    padding: 10px 20px 10px;
+  }
+
+  .education-content {
+    flex-direction: column;
+  }
+
+  .education-item {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .circle-skills {
+    flex-direction: column;
+  }
+
+  .circle-slider {
+    margin: 1rem auto;
+  }
+
+  .circle-slider:last-child {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .line-skills {
+    grid-template-columns: none
+  }
+}
+
+@media (max-width: 450px) {
+  .home-content .title p {
+    font-size: 50px;
+    margin-top: 1rem;
+  }
+
+  .home-content .title {
+    font-size: 40px;
+  }
+
+  .about-cards {
+    grid-template-columns: none
+  }
+
+  .custom-text-center, .custom-text-right {
+    text-align: left;
+  }
+
+  .services-content, .about-content {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 330px) {
+  .about-card {
+    word-break: break-word;
+  }
+}
