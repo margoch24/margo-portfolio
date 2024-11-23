@@ -1,0 +1,107 @@
+input, textarea {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    border: 1px solid #212025;
+    background: #212025;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Sour Gummy';
+    text-shadow: 0 0 10px #32BA9A, 0 0 20px #32BA9A, 0 0 40px rgba(0, 151, 255, 1), 0 0 80px #32BA9A, 0 0 100px #32BA9A;
+}
+
+input::placeholder, textarea::placeholder{
+    text-shadow: none;
+    color: #71797E;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-family: 'Kodchasan';
+    color: white;
+    font-size: 18px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #035464;
+    outline: none;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #035464;
+}
+
+.form-section-flex {
+    display: flex;
+}
+
+.form-section-flex .form-group:last-child {
+    margin-left: 1rem;
+}
+
+.contact-form {
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.numerical {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.result-text {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: grey;
+    font-family: 'Kaushan Script';
+    margin: 2rem 0;
+}
+
+.result-text span {
+    font-family: 'Kodchasan';
+    letter-spacing: 0;
+    color: white;
+}
+
+.save-data {
+    margin: 5rem auto 2rem !important;
+    background: gainsboro;
+}
+
+.save-data h3 {
+    color: rgba(15, 15, 15, 0.975) !important;
+}
+
+.button.save-data:hover {
+    background: transparent;
+  }
+  
+.button.save-data:hover h3 {
+    color: white !important;
+}
+
+.form-section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 1rem;
+}
+
+.user-data {
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem auto;
+}

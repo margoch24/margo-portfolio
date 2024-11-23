@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="public/css/contact.css" rel="stylesheet">
     <link href="public/css/style.css" rel="stylesheet">
     <link href="public/css/bootstrap.css" rel="stylesheet">
   </head>
@@ -48,7 +49,107 @@
       </div>
     </header>
     <main>
-      
+      <div class="contact-content">
+        <h1 class="section-title text-center fade-in contact-title">Contact me</p></h1>
+        <form class="contact-form">
+          <div class="form-section-flex">
+            <div class="form-group fade-in">
+              <label for="name">Name</label>
+              <input name="name" type="text" id="name" placeholder="Name" required>
+              <h6 class="error-input-message hidden name">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="surname">Surname</label>
+              <input name="surname" type="text" id="surname" placeholder="Surname" required>
+              <h6 class="error-input-message hidden surname">Field is required</h6>
+            </div>
+          </div>
+          <div class="form-group fade-in">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" placeholder="Email" required>
+            <h6 class="error-input-message hidden email">Email is not valid</h6>
+          </div>
+          <div class="form-group fade-in">
+            <label for="phone">Phone number</label>
+            <input name="phone" type="tel" id="phone" placeholder="+37000000000" required>
+            <h6 class="error-input-message hidden phone">Phone is not valid</h6>
+          </div>
+
+          <div class="form-section-grid">
+            <div class="form-group fade-in">
+              <label for="city">City</label>
+              <input name="city" type="text" id="city" placeholder="Vilnius" required>
+              <h6 class="error-input-message hidden city">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="street">Street</label>
+              <input name="street" type="text" id="street" placeholder="Gabijos g." required>
+              <h6 class="error-input-message hidden street">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="unit">Unit</label>
+              <input name="unit" type="text" id="unit" placeholder="25-18" required>
+              <h6 class="error-input-message hidden unit">Field is required</h6>
+            </div>
+          </div>
+
+          <div class="form-group fade-in">
+            <label for="message">Message</label>
+            <textarea name="message" rows="5" id="message" placeholder="Message" required></textarea>
+            <h6 class="error-input-message hidden message">Field is required</h6>
+          </div>
+          
+          <div class="numerical">
+            <div class="form-group fade-in">
+              <label for="age">Age</label>
+              <input name="age" type="number" id="age" placeholder="Age" required>
+              <h6 class="error-input-message hidden age">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="height">Height (cm)</label>
+              <input name="height" type="number" id="height" placeholder="Height" required>
+              <h6 class="error-input-message hidden height">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="weight">Weight (kg)</label>
+              <input name="weight" type="number" id="weight" placeholder="Weight" required>
+              <h6 class="error-input-message hidden weight">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="experience">Years of Experience</label>
+              <input name="experience" type="number" id="experience" placeholder="Years of Experience" required>
+              <h6 class="error-input-message hidden experience">Field is required</h6>
+            </div>
+            <div class="form-group fade-in">
+              <label for="luckyNumber">Favorite Number</label>
+              <input name="luckyNumber" type="number" id="luckyNumber" placeholder="Favorite Number" required>
+              <h6 class="error-input-message hidden luckyNumber">Field is required</h6>
+            </div>
+          </div>
+          
+          <div id="save-data" class="button save-data fade-in"> <h3>Save data</h3></div>
+        </form>
+
+        <div class="user-data hidden">
+          <h1 class="section-title text-center fade-in">Thank you</p></h1>
+
+          <h3 class="name-result result-text fade-in">Name: <span ></span></h3>
+          <h3 class="surname-result result-text fade-in">Surname: <span ></span></h3>
+          <h3 class="email-result result-text fade-in">Email: <span ></span></h3>
+          <h3 class="phone-result result-text fade-in">Phone Number: <span ></span></h3>
+          <h3 class="address-result result-text fade-in">Address: <span ></span></h3>
+          <h3 class="message-result result-text fade-in">Message: <span ></span></h3>
+
+          <h3 class="age-result result-text fade-in">Age: <span ></span></h3>
+          <h3 class="height-result result-text fade-in">Height: <span ></span></h3>
+          <h3 class="weight-result result-text fade-in">Weight: <span ></span></h3>
+          <h3 class="experience-result result-text fade-in">Years of Experience: <span ></span></h3>
+          <h3 class="luckyNumber-result result-text fade-in">Favorite Number: <span ></span></h3>
+
+          <h3 class="average-text fade-in result-text">Name Surname (email): <span class="average">result</span></h3>
+          <div id="start-new-contact" class="button start-new-contact save-data fade-in"> <h3>Send new request</h3></div>
+        </div>
+      </div>
     </main>
     <div class="gradient-line"></div>
     <footer id="footer" class="footer">
@@ -58,20 +159,22 @@
           <h3 class="sitename fade-in">Margo</h3>
         </div>
         <div class="section-two fade-in">
-          <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+          <p>Turning ideas into reality with precision and care. Creating solutions that inspire and endure every step of the way.</p>
           <p>&copy; 2024 Margo. All rights reserved.</p>
         </div>
       </div>
       <div class="">
         <div class="icons fade-in">
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/margoch24"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/_m.cherednichenko_/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/marharyta-cherednychenko-4aa725243"><i class="bi bi-linkedin"></i></a>
         </div>
         <div class="support fade-in">Support: <span>email@gmail.com</span></div>
+        <div class="support fade-in">Creator: <span>Marharyta Cherednychenko</span></div>
       </div>
     </footer>
 
+    <script src="public/js/contact.js"></script>
     <script src="public/js/script.js"></script>
   </body>
 </html>

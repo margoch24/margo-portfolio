@@ -11,6 +11,10 @@ const onServicesDocumentReady = () => {
         showServiceDetails('design');
     });
 
+    document.querySelector('.mathml').addEventListener('click', () => {
+        showServiceDetails('mathml');
+    });
+
     document.querySelectorAll('.arrow-div i').forEach(arrow => {
         arrow.addEventListener('click', () => {
             document.querySelector('.services-section').classList.remove('hidden');

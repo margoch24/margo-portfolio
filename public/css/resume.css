@@ -3,6 +3,9 @@ body {
     --title-color: white;
     --text-color: gray;
     --main-bg-color: rgba(15, 15, 15, 0.975);
+    --card-border: #035464;
+    --card-bg: rgba(21, 21, 21, 1);
+    --date-color: #222e3b;
 }
 
 body.light-mode {
@@ -10,6 +13,9 @@ body.light-mode {
     --title-color: black;
     --text-color: gray;
     --main-bg-color: #e9ecef8a;
+    --card-border: #e9ecef;
+    --card-bg: #e9ecef8a;
+    --date-color: #222e3b;
 }
 
 header {
@@ -54,4 +60,25 @@ footer {
 
 footer .support span {
     color: var(--title-color) !important;
+}
+
+.navmenu-toggle {
+    color: var(--title-color) !important;
+}
+
+.about-card {
+    background: linear-gradient(45deg, rgba(3, 84, 100, 1) 0%, rgba(9, 121, 105, 1) 13%, var(--card-bg) 45%) !important;
+    border-right: 1px solid var(--card-border) !important;
+    border-bottom: 1px solid var(--card-border) !important;
+}
+
+.work-title {
+    margin-top: 1rem;
+    font-family: 'Kodchasan';
+    color: #035464;
+}
+
+.resume-section h6 {
+    font-family: "Sour Gummy";
+    color: var(--date-color) !important;
 }

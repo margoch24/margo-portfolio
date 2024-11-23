@@ -12,6 +12,14 @@ const onDocumentReady = () => {
     if (window.location.pathname.includes("/resume.html")) {
         switchTheme()
     }
+
+    if (window.location.pathname.includes("/contact.html")) {
+        handleOnInputsChange()
+    }
+
+    if (window.location.pathname.includes("/portfolio.html")) {
+        onPotfolioPageReady()
+    }
 }
 
 const onDocumentScroll = () => {

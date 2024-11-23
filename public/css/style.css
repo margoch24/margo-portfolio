@@ -257,7 +257,7 @@ main {
   transition: width 1s ease-in-out;
 }
 
-.about .about-content, .services .services-content, .resume .resume-content {
+.about .about-content, .services .services-content, .resume .resume-content, .contact-content, .portfolio .portfolio-content {
   margin-top: 8rem;
   padding: 1rem 3rem;
   flex: 1;
@@ -525,10 +525,21 @@ main {
   margin-bottom: 6rem;
 }
 
-.service-details h3 {
+.service-details h3, .service-details h2, .modal h3 {
   font-size: 18px;
   color: white;
   font-family: 'Kodchasan';
+}
+
+.modal h3 {
+  color: black;
+}
+
+.service-details h2 {
+  font-size: 25px;
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .service-details p span {
@@ -536,6 +547,10 @@ main {
   color: #32BA9A;
 }
 
+.service-details .about-card h4, .resume .about-card h4 {
+  margin: 0;
+}
+ 
 #video.service-details.hidden {
   display: none;
 }
@@ -579,6 +594,162 @@ main {
 #video.service-details audio {
   width: 100%;
   max-width: 300px;
+}
+
+.contact-a {
+  text-decoration: none;
+}
+
+.error-input-message {
+  margin-top: 10px;
+  color: #D22B2B;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.m-t-1 {
+  margin-top: 1rem !important;
+}
+
+.m-t-2 {
+  margin-top: 2rem !important;
+}
+
+.m-t-4 {
+  margin-top: 4rem !important;
+}
+
+#design.service-details img {
+  width: 100%;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-radius: 15px;
+}
+
+#design.service-details, #mathml.service-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#design.service-details.hidden, #mathml.service-details.hidden {
+  display: none;
+}
+
+math {
+  font-size: 30px;
+  color: white;
+}
+
+svg {
+  align-self: center;
+}
+
+.portfolio-menu div h4 {
+  margin-bottom: 0;
+  font-family: 'Kodchasan';
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.portfolio-menu div {
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 152px;
+  text-align: center;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.portfolio-menu div:last-child {
+  margin-right: 0;
+}
+
+.portfolio-menu div.active {
+  border: 1px solid white;
+}
+
+.portfolio-menu div:hover {
+  border-bottom: 1px solid white;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.portfolio-projects {
+  column-count: 3;
+  max-width: 1500px;
+  margin: 5rem auto 2rem;
+}
+
+.project {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.project-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project-hover:hover {
+  opacity: 0;
+}
+
+.modal-dialog {
+  max-width: 800px !important;
+}
+
+.modal-title {
+  font-family: "Kaushan Script";
+  font-size: 25px;
+}
+
+.digital-clock h4 {
+  font-family: "Digital Numbers";
+  color: #32BA9A;
+  margin-bottom: 0;
+}
+
+.digital-clock {
+  padding: 10px;
+  width: fit-content;
+  margin: 2rem auto 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+}
+
+.loading.hidden {
+  display: none;
 }
 
 @media (max-width: 1500px) {
@@ -685,9 +856,32 @@ main {
   }
 }
 
+@media (max-width: 760px) {
+  .portfolio-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-menu div {
+    margin-right: 0;
+  }
+
+  .portfolio-projects {
+    column-count: 2;
+  }
+
+  .project-hover-text {
+    font-size: 23px;
+  }
+}
+
 @media (max-width: 500px) {
   .line-skills {
     grid-template-columns: none
+  }
+
+  .portfolio-projects {
+    column-count: 1;
   }
 }
 
@@ -709,13 +903,13 @@ main {
     text-align: left;
   }
 
-  .services-content, .about-content {
+  .services-content, .about-content, .contact-content, .portfolio-content, .resume .resume-content {
     padding: 1rem !important;
   }
 }
 
 @media (max-width: 330px) {
-  .about-card {
+  .about-card, .user-data {
     word-break: break-word;
   }
 }
