@@ -96,10 +96,10 @@ const setData = (data) => {
             document.querySelector(".modal-title").textContent = title;
             document.querySelector(".modal-description").textContent = description;
 
-            if (id === "clock") {
-                document.querySelector(".modal .svg").classList.remove("hidden")
-            } else {
-                document.querySelector(".modal .svg").classList.add("hidden")
+            document.querySelectorAll(`.modal .project-section`).forEach(section => section.classList.add("hidden"))
+            const projectSection = document.querySelector(`.modal .${id}.project-section`);
+            if (projectSection) {
+                projectSection.classList.remove("hidden")
             }
 
             const modalElement = document.querySelector("#projectModal");
